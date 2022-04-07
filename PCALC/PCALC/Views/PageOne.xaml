@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PCALC.Views.PageOne">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="PowderBlue">
+            <Label  Text="Calculadora Simple"
+                    TextColor="Black"
+                    VerticalOptions="Start" 
+                    HorizontalOptions="CenterAndExpand"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    Margin="5,5,5,5"/>
+            <Label  Text="Primer Numero"
+                    Margin="5,5,5,5"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"
+                    TextColor="Black"/>
+            <Entry  x:Name="num1"
+                    Keyboard="Numeric"
+                    Margin="110,0,110,0"
+                    VerticalOptions="Start"
+                    TextColor="Black"
+                    BackgroundColor="LightBlue"/>
+            <Label  Text="Segundo Numero"
+                    TextColor="Black"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"
+                    Margin="5,15,5,5"/>
+            <Entry  x:Name="num2"
+                    Keyboard="Numeric"
+                    Margin="110,0,110,0"
+                    VerticalOptions="Start"
+                    TextColor="Black"
+                    BackgroundColor="LightBlue"/>
+            <Button Text="Sumar"
+                    x:Name="btnSuma"
+                    TextColor="Black"
+                    Margin="110,5,110,5"
+                    FontSize="16"
+                    Clicked="btnSuma_Clicked"/>
+            <Button Text="Restar"
+                    x:Name="btnResta"
+                    TextColor="Black"
+                    Margin="110,5,110,5"
+                    FontSize="16"
+                    Clicked="btnResta_Clicked"/>
+            <Button Text="Multiplicar"
+                    x:Name="btnMult"
+                    TextColor="Black"
+                    Margin="110,5,110,5"
+                    FontSize="16"
+                    Clicked="btnMult_Clicked"/>
+            <Button Text="Dividir"
+                    x:Name="btnDiv"
+                    TextColor="Black"
+                    Margin="110,5,110,5"
+                    FontSize="16"
+                    Clicked="btnDiv_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
